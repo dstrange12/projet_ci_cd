@@ -2,9 +2,11 @@ name: Test Node.js Project
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   run-tests:
@@ -24,4 +26,3 @@ jobs:
 
       - name: Lancer les tests
         run: npm test
-
